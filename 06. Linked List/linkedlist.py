@@ -15,6 +15,20 @@ class Node: # Node class to represent each element in the linked list
         self.data = data
         self.next = None
 
-class LinkedList: # LinkedList class to manage the linked list operations
-    def __init__(self):
-        self.head = None
+node1 = Node(15) # Creating a node with value 1
+node2 = Node(22) # Creating a node with value 2 
+node3 = Node(54) # Creating a node with value 3
+node4 = Node(2) # Creating a node with value 4
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+
+
+head = node1
+
+current = head
+while current:
+    print(current.data, end=" -> ") 
+    current = current.next
+print("None")
